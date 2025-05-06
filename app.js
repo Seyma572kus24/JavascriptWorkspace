@@ -1,14 +1,14 @@
-// Document write ile çıktı verme
+// ?Document write ile çıktı verme
 
 // document.writeln("Hello World");
 
 
-// console log metodu ile çıktı verme
+// ?console log metodu ile çıktı verme
 
 // console.log("Hello Word ");
 // console.clear();
 
-// Alert (uyarı) popup ile çıktı verme
+// ?Alert (uyarı) popup ile çıktı verme
 
 // alert("Merhaba");
 
@@ -100,39 +100,158 @@
 //     alert("ehliyet sınavına katılamazsınız. ")
 // }
 
-//? Çoklu if lullanımı
-let ad=prompt("Lütfen bir isim giriniz : ");
-let tckn=Number(prompt("Lütfen 11 haneli tc nisi giriniz : "));
+// //? Çoklu if lullanımı
+// let ad=prompt("Lütfen bir isim giriniz : ");
+// let tckn=Number(prompt("Lütfen 11 haneli tc nisi giriniz : "));
 
-konrolEt(ad,tckn);
-konrolEt2(ad,tckn);
+// konrolEt(ad,tckn);
+// konrolEt2(ad,tckn);
 
-function konrolEt(ad , tckn){
-     if(ad!= ad){
-        if(tckn.length == 11){
-            console.log("isim ve tc girildi.")
+// function konrolEt(ad , tckn){
+//      if(ad!= ad){
+//         if(tckn.length == 11){
+//             console.log("isim ve tc girildi.")
 
-        }else{
-             alert("Lütfen tc nizi 11 karakter olarak giriniz.")
-             console.log("Lütfen tc nizi 11 karakter olarak giriniz.")
-        }  
+//         }else{
+//              alert("Lütfen tc nizi 11 karakter olarak giriniz.")
+//              console.log("Lütfen tc nizi 11 karakter olarak giriniz.")
+//         }  
 
-     }else{
-        alert("Lütfen isin alanını boş bırakmayınız!!!");
-        console.log("Lütfen isin alanını boş bırakmayınız!!!");
-     }
+//      }else{
+//         alert("Lütfen isin alanını boş bırakmayınız!!!");
+//         console.log("Lütfen isin alanını boş bırakmayınız!!!");
+//      }
 
-}
+// }
 
 
-function konrolEt2(ad,tckn){
-   if(ad==""){
-      console.log("Lütfen isim alnını boş bırakmayın.!!!");
-      return;
-   }
-   if(tckn.length!=11){
-      console.log("Lütfen tc nizi 11 karakter olarak giriniz.");
-      return; 
-   }
-   console.log("isim ve tcniz problemsiz girildi")
-}
+// function konrolEt2(ad,tckn){
+//    if(ad==""){
+//       console.log("Lütfen isim alnını boş bırakmayın.!!!");
+//       return;
+//    }
+//    if(tckn.length!=11){
+//       console.log("Lütfen tc nizi 11 karakter olarak giriniz.");
+//       return; 
+//    }
+//    console.log("isim ve tcniz problemsiz girildi")
+// }
+
+
+// //? Switch case ----------
+
+// let sayi=prompt("lütfen bir sayı giriniz : ");
+
+// switch(sayi){
+//    case "1":
+//       console.log("girilen sayı 1 dir.");
+//       break;
+//       case "2":
+//          console.log("girilen sayı 2 dir.");
+//         break;
+//         case "3":
+//          console.log("girilen sayı 3 dir.");
+//          break;
+//          case"3":
+//          console.log("girilen sayı 3 dir."); 
+//          break;
+//          case"4":
+//          console.log("girilen sayı 4 dir.");
+//          break;
+//          case"5":
+//          console.log("girilen sayı 5 dir.");
+//          break;
+//          default:
+//             console.log("girilen sayı 1 ile 5 arasında değildir.");
+//             break;
+// }
+
+// //? Tür dönüşümleri
+
+// let a=5;
+// let b="5.1";
+// let b1=Number("5")
+// console.log(a+b); //? toplama yapmaz yan yana yazar
+
+// let c=Number(b);
+// console.log(c+a); //?toplama yapar
+
+// // yada
+// let d=parseInt(b); //?integer veri tipine dönüştür
+// let e=parseFloat(b); //?float veri tipine dönüştür
+
+// let x=String(55);   //?string veri tipine dönüştür
+// console.log(typeof x);
+// console.log(x)
+// let y =(66).toString;  //? string veri tipine dönüştür
+// console.log(y) 
+
+// let rakamlar=(1,2,3,4);
+// console.log(rakamlar);
+
+// //? For Döngüsü
+
+// for(let i=1; i<=100;i++){
+//    console.log(i);
+// }
+
+// for(let j=0; j<=10; j=j+2){
+//      console.log(j);
+// }
+
+// //? While Döngüsü
+// let sayac=1;
+// while(sayac<=10){
+//    console.log(sayac);
+//    sayac++;
+// }
+
+// let sayac=1;
+// while(sayac<=10){
+//    if(sayac%2==0){
+//       console.log("Çif sayılar : "+sayac )
+//    }
+//    sayac++;
+// }
+
+// let sayac=1
+// while(sayac<=10){
+   //    if(sayac%2==1){
+   //       console.log("Tek Saılar : "+sayac )
+   //    }
+   //    sayac++;
+   // }
+
+//? Do - WHİLE Döngüsü
+// let sayac=1;
+// do{
+//    console.log(sayac);
+//    sayac++;
+// }while(sayac<=10)
+
+//? Break kullanımı
+// 1 den 10 kadar olan sayıları ekrana yazdıralım 8 geldiğinde döngüden çıkalım.
+// sayac=1;
+// while(sayac<=10){
+//    console.log(sayac);
+//    if(sayac==8){
+//       break;
+// }
+// sayac++;
+// }
+
+//? Continue Kullanımı
+// 1 den 10 kadar olan sayıları ekrana yazdıralım 8'i yazma diğerlerini yaz.
+// sayac=1;
+// while(sayac<=10){
+//sayac++
+//    if(sayac<=10){
+//break;
+//}
+//    if(sayac==8){
+//       continue;
+// }
+// console.log(sayac);
+//}
+
+
